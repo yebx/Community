@@ -32,7 +32,7 @@ class CommunityApplicationTests implements ApplicationContextAware {
 
 		AlphaDao alphadao=applicationContext.getBean(AlphaDao.class);
 		System.out.println(alphadao.select());
-
+		System.out.println("test");
 		alphadao = applicationContext.getBean("alphadaohibernate",AlphaDao.class);
 		System.out.println(alphadao.select());
 	}
