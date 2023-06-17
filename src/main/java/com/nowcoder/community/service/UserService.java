@@ -181,4 +181,13 @@ public class UserService implements CommunityConstant {
         map.put("user",user);
         return map;
     }
+
+    /**
+     * 查询LoginTicket
+     */
+    public LoginTicket findLoginTicket(String ticket){
+        LoginTicket ticket1 = loginTicketMapper.selectByTicket(ticket);
+        return ticket1;
+    }
+
 }
